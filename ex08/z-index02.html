@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem das Camadas</title>
+    <style>
+        .container {
+            position: relative;
+        }
+        .black {
+            position: relative;
+            border: 3px solid black;
+            height: 100px;
+            margin: 30px;
+            background-color: black;
+            color: white;
+        }
+        .gray {
+            position: absolute;
+            background-color: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+        .green {
+            position: absolute;
+            background-color: rgb(177, 242, 177);
+            width: 35%;
+            height: 100px;
+            left: 270px;
+            top: -15px;
+        }
+
+        .container2 {
+            position: relative;
+        }
+        .black2 {
+            position: relative;
+            border: 3px solid black;
+            height: 100px;
+            margin: 30px;
+            background-color: black;
+            color: white;
+            z-index: 1;
+        }
+        .gray2 {
+            position: absolute;
+            background-color: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+            z-index: 3;
+        }
+        .green2 {
+            position: absolute;
+            background-color: rgb(177, 242, 177);
+            width: 35%;
+            height: 100px;
+            left: 270px;
+            top: -15px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index: Ordem das Camadas</h1>
+    <hr>
+    <h2>Sem definição de ordem das camandas</h2>
+    <p>Se nenhuma ordem for definida os objetos aparecerão em ordem como foram escritos no html, o último será o do topo (primeiro)</p>
+
+    <div class="container">
+        <div class="black"> Caixa Preta</div>
+        <div class="gray">Caixa Cinza</div>
+        <div class="green">Caixa Verde</div>
+    </div>
+    <h2>Definindo a ordem das camadas</h2>
+    <div class="container2">
+        <div class="black2"> Caixa Preta (z-index: 1)</div>
+        <div class="gray2">Caixa Cinza (z-index: 3)</div>
+        <div class="green2">Caixa Verde (z-index: 2)</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferenças entre Display</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span {
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+        .a {
+            display: inline;
+        }
+        .b {
+            display: inline-block;
+        }
+        .c {
+            display: block;
+        }
+
+        p {
+            font-size: 1.3em;
+            color: blue;
+            font-weight: bolder;
+            background-color: rgb(199, 199, 236);
+        }
+
+        h2 {
+            color: rgb(107, 107, 29);
+        }
+    </style>
+</head>
+<body>
+    <h1>Diferenças entre Display</h1>
+
+    <h2>Display inline</h2>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id eos quod sunt repellendus voluptates fugit <span class="a">perferendis</span> <span class="a">cumque</span> pariatur modi incidunt enim aliquid, perspiciatis sint nihil iusto illo necessitatibus explicabo deserunt?</div>
+
+    <h2>Display inline-block</h2>
+    <p>Tem as propriedades de inline porém é possivél definir altura e largura para os blocos.</p>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id eos quod sunt repellendus voluptates fugit <span class="b">perferendis</span> <span class="b">cumque</span> pariatur modi incidunt enim aliquid, perspiciatis sint nihil iusto illo necessitatibus explicabo deserunt?</div>
+
+    <h2>Display block</h2>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id eos quod sunt repellendus voluptates fugit <span class="c">perferendis</span> <span class="c">cumque</span> pariatur modi incidunt enim aliquid, perspiciatis sint nihil iusto illo necessitatibus explicabo deserunt?</div>
+</body>
+</html>
