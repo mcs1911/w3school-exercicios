@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .ex01{
+            background-color: coral;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: scroll;
+        }
+        .ex02{
+            background-color: aquamarine;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        .ex03{
+            background-color: rgb(201, 66, 238);
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando as propriedade do Overflow</h1>
+    <hr>
+    <h2>Overflow: Scroll</h2>
+    <p>Para fazer um transbordamento com rolagem é necessário usar a propriedade overflow scroll</p>
+    <div class="ex01">Porém neste tipo de rolagem você terá rolagem x e y depedendo do tamanho do texto e da tela disponível Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates asperiores explicabo autem eaque fugiat placeat corporis eligendi maxime fugit deleniti voluptate culpa magnam ad neque tempore, sit vitae molestiae a?</div>
+    <h2>Overflow: hidden</h2>
+    <p>Para fazer um transbordamento com rolagem é necessário usar a propriedade overflow hidden</p>
+    <div class="ex02">Porém neste tipo de rolagem tudo o que transbordar do elemento será ocultado. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates asperiores explicabo autem eaque fugiat placeat corporis eligendi maxime fugit deleniti voluptate culpa magnam ad neque tempore, sit vitae molestiae a?</div>
+    <h2>Overflow: visible</h2>
+    <p>Para fazer um transbordamento com rolagem é necessário usar a propriedade overflow visible</p>
+    <div class="ex03">Porém neste tipo de rolagem tudo o que transbordar do elemento aparecerá fora do elemento. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates asperiores explicabo autem eaque fugiat placeat corporis eligendi maxime fugit deleniti voluptate culpa magnam ad neque tempore, sit vitae molestiae a?</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Clearfix</title>
+    <style>
+        div {
+            border: 3px solid green;
+            padding: 5px;
+        }
+
+        img {
+            float: right;
+            width: 200px;
+            height: 200px;
+    }
+        .com {
+            overflow: auto;
+    }
+        .esp {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudos da Propriedade Clearfix</h1>
+    <h2>Sem Clearfix</h2>
+    <p>Esta imagem esta flotando ao lado direito para fora do elemento que a contém. Ela transborda seu container - overflow</p>
+    <div class="sem">
+        <p> <img src="./imagem/porkocornio.jpeg" alt="porkocornio sorridente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto, tenetur dolor labore autem id cum incidunt tempore qui optio ex laudantium ratione provident saepe magnam minus illo at! Quos?</p>
+    </div>
+
+
+    <h2 class="esp">Com Clearfix</h2>
+    <p>Esta imagem esta flotando ao lado direito dentro do elemento que a contém. Com overflow auto</p>
+    <div class="com">
+        <p> <img src="./imagem/porkocornio.jpeg" alt="porkocornio sorridente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto, tenetur dolor labore autem id cum incidunt tempore qui optio ex laudantium ratione provident saepe magnam minus illo at! Quos?</p>
+    </div>
+</body>
+</html>
